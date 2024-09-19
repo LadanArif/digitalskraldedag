@@ -2,15 +2,165 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
-import thumbsup from "../assets/images/thumbsup.png";
 ---
-
-<MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
-</MainLayout>
+	<MainLayout title="Titel">
+		<section class="bg-[#A3B18A] h-[50vh] flex md:gap-12 md:flex-row flex-col justify-center items-center">
+			<svg width="107" height="107" viewBox="0 0 107 107" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M9.72727 53.5C9.72727 47.7517 10.8595 42.0597 13.0593 36.7489C15.2591 31.4382 18.4833 26.6127 22.548 22.548C26.6127 18.4833 31.4382 15.2591 36.7489 13.0593C42.0597 10.8595 47.7517 9.72727 53.5 9.72727C59.2483 9.72727 64.9403 10.8595 70.2511 13.0593C75.5619 15.2591 80.3873 18.4833 84.452 22.548C88.5167 26.6127 91.741 31.4382 93.9407 36.7489C96.1405 42.0597 97.2727 47.7517 97.2727 53.5C97.2727 65.1093 92.661 76.243 84.452 84.452C76.243 92.661 65.1093 97.2727 53.5 97.2727C41.8908 97.2727 30.757 92.661 22.548 84.452C14.339 76.243 9.72727 65.1093 9.72727 53.5ZM53.5 0C23.9534 0 0 23.9534 0 53.5C0 83.0466 23.9534 107 53.5 107C83.0466 107 107 83.0466 107 53.5C107 23.9534 83.0466 0 53.5 0ZM76.8455 36.9636C77.2287 36.4527 77.5075 35.8712 77.666 35.2525C77.8245 34.6338 77.8596 33.9899 77.7693 33.3576C77.679 32.7253 77.465 32.1171 77.1396 31.5675C76.8142 31.0179 76.3837 30.5378 75.8727 30.1545C75.3618 29.7713 74.7803 29.4925 74.1616 29.334C73.5429 29.1755 72.899 29.1404 72.2667 29.2307C71.6344 29.321 71.0261 29.535 70.4766 29.8604C69.927 30.1858 69.4469 30.6163 69.0636 31.1273L43.2475 65.5521L32.6204 54.925C31.7031 54.0391 30.4746 53.5489 29.1993 53.56C27.9241 53.571 26.7042 54.0825 25.8025 54.9843C24.9007 55.8861 24.3892 57.1059 24.3781 58.3811C24.367 59.6564 24.8573 60.8849 25.7432 61.8022L40.3341 76.3931C40.8268 76.8858 41.4196 77.2669 42.0724 77.5105C42.7251 77.7542 43.4226 77.8547 44.1176 77.8054C44.8126 77.756 45.4889 77.5579 46.1007 77.2245C46.7125 76.8911 47.2455 76.4301 47.6636 75.8727L76.8455 36.9636Z" fill="#FFFFFA"/> </svg>
+			 <div class="max-w-sm text-center text-[#FFFFFA] py-8">
+				<h1>Tak!</h1>
+				 <p>Når du deltager i projektet, betyder det, at vi sammen I 81 lande kan spare kloden for 495 ton CO2</p>
+				</div>
+				</section>
+				 <svg class="pb-28" viewBox="0 0 1728 120" fill="none" xmlns="http://www.w3.org/2000/svg"> <path opacity="0.25" d="M0 0V46.29C68.8176 68.49 149.17 78.46 227.52 74.29C328.838 68.92 423.835 40.98 525.312 36.79C631.642 32.43 737.77 53.67 839.52 72.05C939.269 90.05 1038.67 96.93 1141.06 85.13C1193.11 79.13 1241.64 67.29 1291.46 55.79C1424.87 25 1602.72 -14.29 1728 52.47V0H0Z" fill="#A3B18A"/> <path opacity="0.5" d="M0 0V15.81C18.72 36.92 39.8016 56.86 68.6736 72.05C143.15 111.27 237.6 111 323.395 91.58C368.251 81.43 409.925 65.51 452.52 51.78C511.445 32.78 574.531 5.78 640.915 2.11C693.13 -0.74 743.011 11.53 782.899 33.67C828.648 59.06 872.64 95.67 932.126 106.67C990.36 117.46 1049.27 99.98 1103.67 82.39C1158.08 64.8 1211.9 43.39 1272.04 39.34C1358.05 33.49 1435.16 62.22 1515.25 78.18C1558.74 86.84 1600.21 84.35 1640.66 70.68C1672.96 59.79 1709.78 43.75 1728 21.44V0H0Z" fill="#A3B18A"/> <path d="M0 0V5.63C215.899 59 452.29 71.32 685.195 42.57C747.115 34.93 806.486 22.45 868.954 16.11C953.914 7.48 1030.92 28.35 1107.36 51.51C1192.22 77.22 1275.84 95.24 1369.73 90C1494.33 83 1618.07 44.29 1728 5.19V0H0Z" fill="#A3B18A"/> </svg>
+				
+			   
+	 <section class="pb-8 form">
+	
+		<div class="grid grid-cols-1 gap-3 px-4 md:w-[50%] md:mx-auto ">
+			<div class="flex flex-col">
+				<h1 class=" py-4 text-5xl md:mx-auto md:w-full">Registrer dit bidrag</h1>
+			<label for="fornavn" class="font-josefin text-[#A3B18A]">Fornavn</label>
+			<input id="fornavn" type="text" placeholder="Jens">
+		</div>
+	
+		<div class="grid grid-cols-1 gap-6">
+			<div class="flex flex-col">
+			<label for="efternavn" class="font-josefin text-[#A3B18A]">Efternavn</label>
+			<input id="efternavn" type="text" placeholder="Jensen">
+		</div>
+		</div>
+	
+		<div class="grid grid-cols-1 gap-6">
+			<div class="flex flex-col">
+			<label for="mail" class="font-josefin text-[#A3B18A]">Email</label>
+			<input id="mail" type="text" placeholder="jens@mail.com">
+		</div>
+		</div>
+	
+		<div class="grid grid-cols-1 gap-6">
+			<div class="flex flex-col">
+			<label for="post" class="font-josefin text-[#A3B18A]">Postnummer</label>
+			<input id="post" type="text" placeholder="1234">
+		</div>
+		</div>
+	
+		<div class="grid grid-cols-1 gap-6">
+			<div class="flex flex-col">
+			<label for="deltager" class="font-josefin text-[#A3B18A]">Antal deltagere</label>
+			<input id="deltager" type="number" placeholder="1234">
+		</div>
+		</div>
+	
+		<div class="grid grid-cols-1 gap-6">
+			<div class="flex flex-col">
+				<div>
+			<label for="post" class="font-josefin text-[#A3B18A]">Samlet slettet datamængde (GB)</label>
+			<span class="text-[12px] hvad">Hvad er dette?</span>
+				</div>
+		
+			<input id="post" type="number" placeholder="40 GB">
+		</div>
+		</div>
+	
+		<div class="flex-row-reverse">
+	
+		<input type="checkbox" id="betingelser" value="Bike">
+		<label class="font-josefin text-[#A3B18A]" for="betingelser"> Jeg accepterer betingelserne for deltagelse i Digital Skraldedag</label><br>
+		
+		</div>
+		<div class="flex-row-reverse">
+	
+		<input type="checkbox" id="betingelser" value="Bike">
+		<label class="font-josefin text-[#A3B18A]" for="betingelser"> Jeg vil gerne tilmeldes nyhedsbrevet</label><br>
+		
+		</div>
+	
+		<div class="flex btn">
+			<Button >Udfør</Button>
+		</div>
+		
+		</div>
+				   </section>
+	
+	
+	
+	
+	<section class="tak hidden pb-28">
+	
+	<div class="w-ful h-full">
+		<div class="w-full flex justify-center py-12">
+				<svg width="228" height="183" viewBox="0 0 228 183" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M6.2016 13.359C9.12002 9.24014 12.9759 5.87939 17.4489 3.55594C21.922 1.2325 26.883 0.0134262 31.92 0H196.08C206.75 0 216.064 5.37563 221.798 13.359C225.709 18.8261 228 25.5628 228 32.7913V150.209C228 167.925 214.092 183 196.08 183H31.92C13.908 183 0 167.925 0 150.209V32.7913C0 25.5628 2.28 18.8261 6.2016 13.3476V13.359ZM33.4362 22.875L105.564 102.537C106.632 103.717 107.935 104.659 109.388 105.304C110.84 105.949 112.411 106.282 114 106.282C115.589 106.282 117.16 105.949 118.612 105.304C120.065 104.659 121.368 103.717 122.436 102.537L194.564 22.875H33.4362ZM205.2 45.1553L139.308 117.921C136.103 121.459 132.195 124.286 127.837 126.22C123.479 128.155 118.766 129.154 114 129.154C109.234 129.154 104.521 128.155 100.163 126.22C95.8046 124.286 91.8975 121.459 88.692 117.921L22.8 45.1553V150.209C22.8 156.088 27.2688 160.125 31.92 160.125H196.08C200.731 160.125 205.2 156.088 205.2 150.209V45.1553Z" fill="#A3B18A"/>
+			</svg>
+		</div>
+	
+	
+			
+	<div class="py-8">
+		<h2 class="text-center text-4xl text-[#A3B18A]">Tusind tak for at registrere dit bidrag!</h2>
+		<p class=" max-w-sm flex mx-auto pt-2 text-[#A3B18A] text-l text-center">Du vil inden længe modtage en bekræftelsesemail, som kvittering på din indsats</p>
+	</div>
+	
+	
+	
+	</div>
+	
+	
+	</section>
+		
+	<section class="py-20 pb-40 hidden infor">
+	
+		<div class="flex flex-col w-[60%] mx-auto items-center justify-center">
+			<h1 class="text-[#A3B18A] pb-6">Mest stillede spoergsmaal</h1>
+	
+	
+	
+			<div class="py-3">
+				<h5 class="text-[#A3B18A] text-xl">Hvordan kan jeg se mit bidrag?</h5>
+				<p>Du kan tjekke din bidrag ved at gå ind på datastørrelsen på dine filer, og derefter notere og tælle det sammenlagte beløb. Når du har fundet frem til dit, eller jeres, endelige beløb, skriv da dette i feltet for hvor meget du, eller i, har bidraget.</p>
+			</div>
+	
+			<div class="py-3">
+				<h5 class="text-[#A3B18A] text-xl">Hvad er en gigabyte?</h5>
+				<p>Du kan tjekke din bidrag ved at gå ind på datastørrelsen på dine filer, og derefter notere og tælle det sammenlagte beløb. Når du har fundet frem til dit, eller jeres, endelige beløb, skriv da dette i feltet for hvor meget du, eller i, har bidraget.</p>
+			</div>
+	
+			<div class="py-3">
+				<h5 class="text-[#A3B18A] text-xl">Hvilken forskel goer min indsats?</h5>
+				<p>Du kan tjekke din bidrag ved at gå ind på datastørrelsen på dine filer, og derefter notere og tælle det sammenlagte beløb. Når du har fundet frem til dit, eller jeres, endelige beløb, skriv da dette i feltet for hvor meget du, eller i, har bidraget.</p>
+			</div>
+	
+	<div class="backBtn">
+		<Button>Tilbage</Button>
+	</div>
+			
+		</div>
+	
+	</section>
+	
+	</MainLayout>
+	
+	
+	<script>
+	
+	const elementBtn = document.querySelector(".btn")
+	const tak = document.querySelector(".tak")
+	const form = document.querySelector(".form")
+	const hvad = document.querySelector(".hvad")
+	const backBtn = document.querySelector(".backBtn")
+	const infor = document.querySelector(".infor")
+	
+	
+	elementBtn.addEventListener("click", () =>{
+		tak.classList.toggle("hidden")
+		form.classList.toggle("hidden")
+	})
+	hvad.addEventListener("click", () =>{
+		form.classList.toggle("hidden")
+		infor.classList.toggle("hidden")
+	})
+	backBtn.addEventListener("click", () =>{
+		form.classList.toggle("hidden")
+		infor.classList.toggle("hidden")
+	})
+	</script>
