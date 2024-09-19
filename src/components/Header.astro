@@ -1,45 +1,45 @@
 ---
+
 ---
 
-<div class="pb-20 md:pb-12 md:pt-6 md:px-8" >
-    <div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full text-black bg-white z-50" id="navbar">
-        <div id="navbar" class="flex flex-row justify-between">
-        <div id="logo" class="">
-        <a href="Index"> <h1 class="text-2xl md:text-4xl">Digital <br> Skraldedag</p></a>
-        </div>
-        <nav id="desktopmenu" class="hidden lg:block md:pt-1">
+<div class="pb-20 md:pb-12 md:pt-6 md:px-8">
+  <div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full text-black bg-white z-50" id="navbar">
+    <div id="navbar" class="flex flex-row justify-between">
+      <div id="logo" class="">
+        <a href="Index"> <h1 class="text-2xl md:text-4xl">Digital <br /> Skraldedag</h1></a>
+      </div>
+      <nav id="desktopmenu" class="hidden lg:block md:pt-1">
         <ul class="flex flex-row gap-4">
-            <a class = "nav-link " href ="Index">Forside</a>
-            <a class = "nav-link " href="Deltag">Sådan deltager du</a>
-            <a class = "nav-link " href="Registrerditbidrag">Registrer dit bidrag</a>
+          <a class="nav-link" href="Index">Forside</a>
+          <a class="nav-link" href="Deltag">Sådan deltager du</a>
+          <a class="nav-link" href="registrerditbidrag">Registrer dit bidrag</a>
         </ul>
-        </nav>
-        <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-4">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-          </svg>
-          </button>
-        </div>
-        <nav id="mobilmenu" class=" lg:static flex flex-col content-center pt-4 bg-white"  
-        x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
-        <ul class="z-50">
-        <li class="text-left py-2  "><a href="Index" >Forside</a></li>
-        <li class="text-left py-2 "><a href="Deltag" >Sådan deltager du</a></li>
-        <li class="text-left py-2  "><a href="Registrerditbidrag">Registrer dit bidrag</a></li>
-
-        </ul>
-        </nav>
-        </div>
+      </nav>
+      <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu"
+        ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-4">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"></path>
+        </svg>
+      </button>
+    </div>
+    <nav id="mobilmenu" class="lg:static flex flex-col content-center pt-4 bg-white" x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
+      <ul class="z-50">
+        <li class="text-left py-2"><a href="Index">Forside</a></li>
+        <li class="text-left py-2"><a href="Deltag">Sådan deltager du</a></li>
+        <li class="text-left py-2"><a href="Registrerditbidrag">Registrer dit bidrag</a></li>
+      </ul>
+    </nav>
+  </div>
 </div>
 
 <script>
-    window.addEventListener("scroll", function(){
-        console.log(window.scrollY)
-        let navbar = document.getElementById("navbar")
-        if(this.window.scrollY>6){
-            navbar.classList.add("hidden")
-         }
-        if(this.window.scrollY<6){
-            navbar.classList.remove("hidden")
-        }
-    })
+  window.addEventListener("scroll", function () {
+    console.log(window.scrollY);
+    let navbar = document.getElementById("navbar");
+    if (this.window.scrollY > 6) {
+      navbar.classList.add("hidden");
+    }
+    if (this.window.scrollY < 6) {
+      navbar.classList.remove("hidden");
+    }
+  });
 </script>
