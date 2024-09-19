@@ -1,15 +1,116 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
 ---
+
 <MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+  <body>
+    <article class="px-4">
+      <section>
+        <article class="bg-[#DAD7CD] py-12">
+          <h1 class="text-9xl text-[#1B1E1A]">DIGITAL</h1>
+          <h2 class="text-7xl text-[#1B1E1A]">SKRALDEDAG</h2>
+          <h2 class="text-4xl text-[#A3B18A]">15 MARTS 2025</h2>
+        </article>
+      </section>
+
+      <section class="grid grid-cols-2 pt-2 gap-4">
+        <article class="bg-[#DAD7CD] p-6">
+          <p>Læs mere</p>
+        </article>
+        <article class="bg-[#5C7650] gap-4 p-6">
+          <p>Registrer</p>
+        </article>
+      </section>
+    </article>
+
+    <section class="px-4 pt-20">
+      <article class="bg-[#A3B18A] py-16">
+        <h2 class="flex justify-center text-4xl text-[#1B1E1A]">DIGITAL SKRALDEDAG</h2>
+        <h2 class="flex justify-center pt-4 text-3xl text-[#1B1E1A]">HVAD ER DET?</h2>
+      </article>
+      <article>
+        <p class="py-4">Digital Cleanup Day er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day.</p>
+        <p class="pb-4">Nu er det femte år, og organiseret af Let's Do It World, Digital Cleanup Day har til formål at øge bevidstheden om digital forurening, opmuntre enkeltpersoner og virksomheder til at rydde op i og omstrukturere deres online tilstedeværelse.</p>
+      </article>
+    </section>
+
+    <section class="pt-20">
+      <article class="py-5 bg-[#5C7650]">
+        <div class="flex flex-auto gap-4 justify-center py-7 bg-[#FFFFFA]">
+          <h3 class="text-[#A3B18A]">15 MARTS 2025</h3>
+          <h3 class="text-[#A3B18A]">15 MARTS 2025</h3>
+          <h3 class="text-[#A3B18A]">15 MARTS 2025</h3>
+        </div>
+      </article>
+    </section>
+
+    <section class="pt-20 px-4">
+      <article class="bg-[#DAD7CD] py-20">
+        <div class="flex justify-center bg-[#FFFFFA] py-20 mx-20">
+          <div>
+            <p>REGISTRER</p>
+            <p>DIT BIDRAG</p>
+            <p>NU!</p>
+          </div>
+        </div>
+        <div class="flex justify-center bg-[#5C7650] mt-6 py-2 mx-20">
+          <p>Registrer</p>
+        </div>
+      </article>
+
+      <article class="bg-[#DAD7CD] py-20">
+        <div class="flex justify-center bg-[#FFFFFA] py-20 mx-20">
+          <div>
+            <p>DELTAG</p>
+            <p>ALLEREDE</p>
+            <p>NU!</p>
+          </div>
+        </div>
+        <div class="flex justify-center bg-[#5C7650] mt-6 py-2 mx-20">
+          <p>Læs mere</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="pt-20">
+      <article class="bg-[#A3B18A] py-20 px-4">
+        <div class="bg-[#DAD7CD] py-10">
+          <h2 class="flex justify-center text-5xl text-[#1B1E1A]">PROBLEMET MED</h2>
+          <h2 class="flex justify-center pt-5 text-4xl text-[#1B1E1A]">DIGITALT SKRALD</h2>
+        </div>
+        <div>
+          <p class="pt-3">Ifølge data fra Lancaster University, hvor et team af eksperter forsker i internettets miljøpåvirkning, står datacentrene i øjeblikket for mellem 1,8 % og 2,8 % af verdens elforbrug. Men hvis der tages højde for hele industriens påvirkning, inklusiv fabrikker og forsyningskæder, udvinding eller transport, stiger dette til 20 %. Det betyder, at vores digitale aktivitet forurener mere end nogle lande som Schweiz eller Norge.</p>
+          <p class="pt-3">Baseret på de seneste års væksttendenser anslås det desuden, at serverforbruget i 2025 vil kunne udgøre så meget som 8 % af verdens samlede elforbrug, og hvis det samlede beløb for hele industrien lægges sammen, vil CO2-emissionerne være lige så højt som dem i verdens fjerde mest forurenende land, Rusland, lige efter Kina, USA og Indien.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="pt-20">
+      <article class="bg-[#DAD7CD] py-20 px-4">
+        <div class="bg-[#A3B18A] py-10">
+          <h2 class="flex justify-center text-5xl text-[#1B1E1A]">VIDSTE DU?</h2>
+          <h2 class="flex justify-center pt-5 text-4xl text-[#1B1E1A]">VED AT RYDDE OP</h2>
+        </div>
+        <div>
+          <p class="pt-3">Hjælper med at reducere CO2-udledning</p>
+          <p class="pt-3">Forlænger dine enheders levetid</p>
+          <p class="pt-3">Reducerer datalagring sikkerhedsrisici</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="pt-20">
+      <article class="py-5 bg-[#5C7650]">
+        <div class="flex flex-auto gap-4 justify-center py-7 bg-[#FFFFFA]">
+          <h3 class="text-[#A3B18A]">15 MARTS 2025</h3>
+          <h3 class="text-[#A3B18A]">15 MARTS 2025</h3>
+          <h3 class="text-[#A3B18A]">15 MARTS 2025</h3>
+        </div>
+      </article>
+    </section>
+  </body>
 </MainLayout>
