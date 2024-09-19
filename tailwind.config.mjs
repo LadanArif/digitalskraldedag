@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        koulen: ["koulen", "serif"],
+        koulen: ["koulen", "sans-serif"],
         josefin: ["josefin", "sans-serif"],
       },
     },
