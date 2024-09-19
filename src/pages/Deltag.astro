@@ -6,63 +6,107 @@ import Button from '../components/Button.astro';
 
 <MainLayout title="Titel">
 
-    <!-- hovedafsnit  -->
+    <!-- hovedafsnit note: billede skal være længere nede!! -->
+
     <section>
-        <div class="class">
-            <img src="" alt="">
-            <h1>hej</h1>
-            <p></p>
+        <div class="md:grid grid-cols-2 md:inset-0">
+            <div class="relative max-w-xl mx-auto">
+                <img class="h-96 w-full object-cover" src="img1_deltag.jpg" alt="Random image">
+                <div class="absolute inset-0 flex items-center justify-center">
+                <h1 class="text-white text-3xl font-bold">Deltag i Digital Skraldedag</h1>
+                </div>
+            </div>
+            <p class="px-16">Vi lever i en digital verden, hvor opretholdelsen af internettets systemer kræver store mængder energi. 
+                Dette er hverken bæredygtigt for vores planet eller for os som samfund. For at imødegå denne udfordring har vi lanceret Digital Skraldedag – en indsats, der giver os mulighed for at reducere vores digitale affald og dermed bidrage til en mere bæredygtig fremtid.
+                Vil du være med til at skabe forandring? Så bliv en del af fællesskabet, og hjælp os med at gøre en forskel. Spred budskabet, og del begivenheden med en ven!</p>
+        </div>
+        </section>
+   
+
+
+    <!-- den grønne baggrund til alle sektioner  -->
+  <div class="bg-[#A3B18A]">
+      <!-- første afsnit  -->
+      <section>
+        <div class="px-16 md:grid grid-cols-2">
+            <div class="md:w-full ">
+                <img class="pt-20 md:pl-16 md:h-96" src="img1_deltag.jpg" alt="">
+            </div>
+            <div class="md:pt-28">
+                <h2 class="font-bold md:col-span-2">Ryd op på din smartphone </h2>
+                 <p class="">Fjern alle applikationer, som du ikke har brugt i et stykke tid, eller kun har brugt få gange. Vær ærlig og modig! Slet alle de unødvendige, glemte, gamle apps og spil, som du har downloadet, men endnu ikke rigtig har prøvet. 
+                Chancen for, at du pludselig begynder at bruge dem senere, er ret lille! De bruger energi, selv når de ikke er i brug, og kan optage hundreder af megabytes under månedlige opdateringer.
+                Husk at slette brugerprofiler (inklusive e-mails) og tilknyttede data, som du oprettede, da du var 15 år og ikke har brugt i et årti eller mere! Du vil fremskynde din telefon og øge batterilevetiden. Det er altid værd at have så få apps som nødvendigt.
+                Gennemgå dine billeder og videoer. Ved at slette de unødvendige, samt eventuelle dubletter, kan du frigøre titusinder af gigabytes værdifuld lagerplads. Se retningslinjerne for, hvordan du rydder op på din smartphone og tablet.</p>
+            </div>
+            
         </div>
     </section>
 
-    <!-- den grønne baggrund til alle sektioner  -->
-  <div class="class">
-      <!-- første afsnit  -->
-      <section>
-        <div class="class">
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
-        </div>
-    </section>
+
+    <!-- width: 50%; container  -->
+     <!-- img:  padding-left: 2%;
+      width: -webkit-fill-available;
+      padding-right: 17%;
+      height: 550px; -->
+
+
+
 
      <!-- andet afsnit  -->
      <section>
-        <div class="class">
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
+        <div class="px-16 md:grid grid-cols-2 gap-5">
+            <div class=" order-1">
+                <img class="pt-20" src="img1_deltag.jpg" alt="">
+            </div>
+            <div class="md:pt-28 md:pl-16">
+                <h2 class="font-bold md:col-span-2">Ryd op på din computer harddrive </h2>
+                 <p class="md:pr-20 ">Ryd op på din personlige computer, og slet filer, der er dubletter eller er blevet overflødige. Gennemgå alle dine billeder, og slet dubletter og slørede billeder. Tjek videofilerne, og slet dem, du har set, eller som ikke er nødvendige. Arkiver de vigtige filer. 
+                    Vær forberedt på at finde virkelig fantastiske ting på din computer! 
+                    Se retningslinjerne for, hvordan du rydder op på din computer og drev.</p>
+            </div>
+            
         </div>
-
-     </section>
+    </section>
 
 
      <!-- tredje afsnit  -->
      <section>
-        <div class="class">
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
+        <div class="px-16 md:grid grid-cols-2 gap-5">
+            <img class="pt-20" src="img1_deltag.jpg" alt="">
+            <div class="md:pt-28 md:pl-16">
+                <h2 class="font-bold md:col-span-2">Ryd op i din indbakke </h2>
+                 <p class="">Filtrér e-mails efter de ældste, og arkiver dem. Afmeld nyhedsbreve, du alligevel ikke læser. Vælg lange samtaler, behold den nyeste, og slet resten! Søg efter almindelige navne, adresser og ord for at samle lignende e-mails, så du kan håndtere dem på én gang. 
+                    Vær modig, og tryk på slet-knappen.
+                    Se retningslinjerne for, hvordan du rydder op i din indbakke!</p>
+            </div>
+            
         </div>
     </section>
 
 
      <!-- fjerde afsnit  -->
      <section>
-        <div class="class">
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
+        <div class="px-16 md:grid grid-cols-2">
+            <img class="pt-20 order-1" src="img1_deltag.jpg" alt="">
+            <div class="class">
+                <h2 class="font-bold md:col-span-2">Nye tiltag </h2>
+                 <p class="">I stedet for at sende e-mails, brug flere co-working steder. Stop med at sende 'ok' og 'tak' e-mails! 
+                    Opbevar de vigtige filer i én cloud-løsning, så der ikke er behov for at gemme den samme fil på hver computer. Tænk dig om, før du laver backup. Skab mindre 'hurtigt indhold', og vær mere bevidst om dine videoer og billeder. 
+                    Sørg for kun at tage backup af de filer, du virkelig har brug for, og kun de fotos, du elsker.
+                    Små ændringer i dine internetvaner, såsom at slukke for video under virtuelle møder, reducere kvaliteten på streamingtjenester, mindske spilletid, begrænse tiden på sociale medier og afmelde nyhedsbreve og e-maillister, kan markant reducere dit miljøaftryk!
+                    Vær kreativ og lev let!</p>
+            </div>
+            
         </div>
     </section>
+  </div>
 
-
-     <!-- femte afsnit  -->
-     <section>
-        <div class="class">
-            <h2></h2>
-            <h2></h2>
-            <Button></Button>
+      <!-- femte afsnit  -->
+      <section>
+        <div class="pl-16">
+            <h2 class="">Vil du gøre en forskel og skabe en mere bæredygtig verden? <br> Bliv en del af bevægelsen ved at registrere dit bidrag her.</h2>
+            <Button>Registrer dit bidrag her </Button>
             <img src="" alt="">
         </div>
     </section>
@@ -75,14 +119,6 @@ import Button from '../components/Button.astro';
             <!-- svg -->
         </div>
     </section>
-  </div>
   
 
 </MainLayout>
-
-
-
-
-<Button>
-
-</Button>
