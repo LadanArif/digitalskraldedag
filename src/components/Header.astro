@@ -6,13 +6,13 @@
   <div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full text-black bg-white z-50" id="navbar">
     <div id="navbar" class="flex flex-row justify-between">
       <div id="logo" class="">
-        <a href="index"> <h1 class="text-2xl md:text-4xl">Digital <br /> Skraldedag</h1></a>
+        <a href="index.astro"> <h1 class="text-2xl md:text-4xl">Digital <br /> Skraldedag</h1></a>
       </div>
       <nav id="desktopmenu" class="hidden lg:block md:pt-1">
         <ul class="flex flex-row gap-4">
-          <a class="nav-link" href="index">Forside</a>
-          <a class="nav-link" href="deltag">Sådan deltager du</a>
-          <a class="nav-link" href="registrerditbidrag">Registrer dit bidrag</a>
+          <a class="nav-link" href="index.astro">Forside</a>
+          <a class="nav-link" href="deltag.astro">Sådan deltager du</a>
+          <a class="nav-link" href="registrerditbidrag.astro">Registrer dit bidrag</a>
         </ul>
       </nav>
       <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu"
@@ -23,9 +23,9 @@
     </div>
     <nav id="mobilmenu" class="lg:static flex flex-col content-center pt-4 bg-white" x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
       <ul class="z-50">
-        <li class="text-left py-2"><a href="index">Forside</a></li>
-        <li class="text-left py-2"><a href="deltag">Sådan deltager du</a></li>
-        <li class="text-left py-2"><a href="registrerditbidrag">Registrer dit bidrag</a></li>
+        <li class="text-left py-2"><a href="index.astro">Forside</a></li>
+        <li class="text-left py-2"><a href="deltag.astro">Sådan deltager du</a></li>
+        <li class="text-left py-2"><a href="registrerditbidrag.astro">Registrer dit bidrag</a></li>
       </ul>
     </nav>
   </div>
