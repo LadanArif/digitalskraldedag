@@ -9,9 +9,9 @@
         </div>
         <nav id="desktopmenu" class="hidden lg:block md:pt-1">
         <ul class="flex flex-row gap-4">
-            <a class = "nav-link " href ="index">Forside</a>
-            <a class = "nav-link " href="Deltag">Sådan deltager du</a>
-            <a class = "nav-link " href="Registrerditbidrag">Registrer dit bidrag</a>
+            <a class = "nav-link " href ="index.astro">Forside</a>
+            <a class = "nav-link " href="Deltag.astro">Sådan deltager du</a>
+            <a class = "nav-link " href="Registrerditbidrag.astro">Registrer dit bidrag</a>
         </ul>
         </nav>
         <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-4">
@@ -22,9 +22,9 @@
         <nav id="mobilmenu" class=" lg:static flex flex-col content-center pt-4 bg-white"  
         x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
         <ul class="z-50">
-        <li class="text-left py-2  "><a href="#index.astro" >Forside</a></li>
-        <li class="text-left py-2 "><a href="#Deltag.astro" >Sådan deltager du</a></li>
-        <li class="text-left py-2  "><a href="#Registrerditbidrag.astro">Registrer dit bidrag</a></li>
+        <li class="text-left py-2  "><a href="index.astro" >Forside</a></li>
+        <li class="text-left py-2 "><a href="Deltag.astro" >Sådan deltager du</a></li>
+        <li class="text-left py-2  "><a href="Registrerditbidrag.astro">Registrer dit bidrag</a></li>
 
         </ul>
         </nav>
